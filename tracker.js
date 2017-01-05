@@ -112,7 +112,7 @@
 		log['res']= parseInt(entry.responseEnd - entry.responseStart, 10)
 		
 		log['get']= parseInt(log['req']+log['res'], 10)
-		log['tot']= parseInt(log['con']+log['wait']+log['req']+log['res'], 10)
+		// log['tot']= parseInt(log['con']+log['wait']+log['req']+log['res'], 10)
 
 		if( 'domInteractive' in entry && 'fetchStart' in entry ){
 			log['load']= parseInt(entry.loadEventEnd - entry.navigationStart, 10)
