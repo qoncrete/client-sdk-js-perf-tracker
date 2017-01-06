@@ -119,8 +119,10 @@
 			log['dom']= parseInt(entry.domInteractive - entry.fetchStart, 10)
 		}
 
-		log['elms']= document.getElementsByTagName('*').length
-
+		log['nodes']= document.getElementsByTagName('*').length
+		log['imgs']= document.getElementsByTagName('img').length
+		log['scripts']= document.getElementsByTagName('script').length
+		log['iframes']= document.getElementsByTagName('iframe').length
 		// log['_ = entry
 
 		// console.log(log)
